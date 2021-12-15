@@ -9,9 +9,16 @@ public class RegisterAction extends ActionSupport {
 	String email;
 	String address;
 	String selectedColor;
+	Boolean subscription;
 
 	public String execute() {
 		System.out.println("execute() method called");
+		if (subscription == true) {
+			System.out.println("< subscriber: TRUE >");
+		}
+		else {
+			System.out.println("< subscriber: FALSE >");
+		}
 		return "success";
 	}
 	
@@ -69,6 +76,14 @@ public class RegisterAction extends ActionSupport {
 
 	public void setSelectedColor(String selectedColor) {
 		this.selectedColor = selectedColor;
+	}
+
+	public Boolean getSubscription() {
+		return subscription;
+	}
+
+	public void setSubscription(Boolean subscription) {
+		this.subscription = subscription;
 	}
 	
 	

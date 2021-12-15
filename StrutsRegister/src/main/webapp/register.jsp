@@ -24,6 +24,8 @@
 			headerKey="None" 
 			headerValue="Select a color"
 			label="Favorite Color"/>
+		<s:checkbox name="subscription" value="false" label="Subscripbe us"></s:checkbox>
+		
 		<s:reset value="Reset" />
 		<s:submit value="Register" />
 	</s:form>
