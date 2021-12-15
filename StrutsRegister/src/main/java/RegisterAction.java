@@ -8,6 +8,7 @@ public class RegisterAction extends ActionSupport {
 	Integer age;
 	String email;
 	String address;
+	String selectedColor;
 
 	public String execute() {
 		System.out.println("execute() method called");
@@ -60,6 +61,14 @@ public class RegisterAction extends ActionSupport {
 
 	public void setAddress(String address) {
 		this.address = address;
+	}
+
+	public String getSelectedColor() {
+		return selectedColor;
+	}
+
+	public void setSelectedColor(String selectedColor) {
+		this.selectedColor = selectedColor;
 	}
 	
 	

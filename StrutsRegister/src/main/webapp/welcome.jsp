@@ -28,7 +28,10 @@
 	<br/>
 	<s:label value="Address:" />
 	<s:property value="address" />	
-	
+	<br/>
+	<s:label value="Favotite Color:" />
+	<s:property value="selectedColor" />	
+
 	
 </body>
 </html>

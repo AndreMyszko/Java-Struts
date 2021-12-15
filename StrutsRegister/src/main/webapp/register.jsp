@@ -19,6 +19,11 @@
 		<s:textfield name="age" label="Age" />
 		<s:textfield name="email" label="Email" />
 		<s:textarea name="address" cols="30" rows="7" label="Address" />
+		<s:select list="{'Red', 'Green', 'Blue', 'Purple', 'White', 'Black'}" 
+			name="selectedColor" 
+			headerKey="None" 
+			headerValue="Select a color"
+			label="Favorite Color"/>
 		<s:reset value="Reset" />
 		<s:submit value="Register" />
 	</s:form>
