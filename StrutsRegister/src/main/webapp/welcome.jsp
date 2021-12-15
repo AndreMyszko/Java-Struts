@@ -25,6 +25,10 @@
 	<br/>
 	<s:label value="Email:" />
 	<s:property value="email" />	
+	<br/>
+	<s:label value="Address:" />
+	<s:property value="address" />	
+	
 	
 </body>
 </html>

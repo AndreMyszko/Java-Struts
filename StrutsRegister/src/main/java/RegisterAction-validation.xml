@@ -32,4 +32,8 @@
 			<message>Must provide a valid Email.</message>
 		</field-validator>
 	</field>
+	<validator type="requiredstring">
+		<param name="fieldName">address</param>
+		<message>Address is required.</message>
+	</validator>
 </validators>

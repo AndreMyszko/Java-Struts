@@ -7,6 +7,7 @@ public class RegisterAction extends ActionSupport {
 	String gender;
 	Integer age;
 	String email;
+	String address;
 
 	public String execute() {
 		System.out.println("execute() method called");
@@ -52,6 +53,16 @@ public class RegisterAction extends ActionSupport {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	
+	
 	
 	//OLD VALIDATOR
 	/*public void validate() {
