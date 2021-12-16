@@ -25,7 +25,7 @@
 			headerValue="Select a color"
 			label="Favorite Color"/>
 		<s:checkbox name="subscription" value="false" label="Subscripbe us"></s:checkbox>
-		
+		<s:checkboxlist list="{'Code', 'Read', 'Music', 'Game'}"  name="selectedHobbies" label="Hobbies"/>
 		<s:reset value="Reset" />
 		<s:submit value="Register" />
 	</s:form>

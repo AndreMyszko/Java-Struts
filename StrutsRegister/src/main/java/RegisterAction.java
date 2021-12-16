@@ -10,7 +10,8 @@ public class RegisterAction extends ActionSupport {
 	String address;
 	String selectedColor;
 	Boolean subscription;
-
+	String selectedHobbies;
+	
 	public String execute() {
 		System.out.println("execute() method called");
 		if (subscription == true) {
@@ -85,6 +86,15 @@ public class RegisterAction extends ActionSupport {
 	public void setSubscription(Boolean subscription) {
 		this.subscription = subscription;
 	}
+
+	public String getSelectedHobbies() {
+		return selectedHobbies;
+	}
+
+	public void setSelectedHobbies(String selectedHobbies) {
+		this.selectedHobbies = selectedHobbies;
+	}
+	
 	
 	
 	
