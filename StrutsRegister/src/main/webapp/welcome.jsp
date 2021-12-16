@@ -34,6 +34,13 @@
 	<br/>
 	<s:label value="Hobbies:" />
 	<s:property value="selectedHobbies" />	
+	<br/>
+	<s:if test="%{subscription == true}">
+		<div>You are a subscriber</div>
+	</s:if>
+	<s:else>
+		<div>You are NOT a subscriber</div>
+	</s:else>
 
 	
 </body>

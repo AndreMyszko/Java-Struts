@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 import com.opensymphony.xwork2.ActionSupport;
 
 public class RegisterAction extends ActionSupport {
@@ -11,6 +14,12 @@ public class RegisterAction extends ActionSupport {
 	String selectedColor;
 	Boolean subscription;
 	String selectedHobbies;
+	List<Product> products;
+	
+	public String initializeFormFields() {
+		initializeProducts();
+		return "input";
+	}
 	
 	public String execute() {
 		System.out.println("execute() method called");
@@ -21,6 +30,13 @@ public class RegisterAction extends ActionSupport {
 			System.out.println("< subscriber: FALSE >");
 		}
 		return "success";
+	}
+	
+	public void initializeProducts() {
+		products = new ArrayList<Product>();
+		products.add(new Product(1, "Phone", 1000));
+		products.add(new Product(1, "Note", 2000));
+		products.add(new Product(1, "PC", 3000));
 	}
 	
 	public String getFirstName() {
@@ -93,6 +109,14 @@ public class RegisterAction extends ActionSupport {
 
 	public void setSelectedHobbies(String selectedHobbies) {
 		this.selectedHobbies = selectedHobbies;
+	}
+
+	public List<Product> getProducts() {
+		return products;
+	}
+
+	public void setProducts(List<Product> products) {
+		this.products = products;
 	}
 	
 	
