@@ -31,6 +31,10 @@
 		<field-validator type="email">
 			<message>Must provide a valid Email.</message>
 		</field-validator>
+		<field-validator type="domainNameValidator">
+			<param name="domainName">gmail.com</param>
+			<message>Must have a "gmail.com" domain.</message>
+		</field-validator>
 	</field>
 	<validator type="requiredstring">
 		<param name="fieldName">address</param>
