@@ -9,4 +9,4 @@ Eclipse
 Java with struts
 
 ### Propouse:
-Simple register validation
+Simple register validation and interceptors
